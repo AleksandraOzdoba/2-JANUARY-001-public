@@ -11,7 +11,7 @@ jobs:
   - name: “sbom”
     script: # existing functionality
       - java -version
-      - cd test
+      - cd java
       - cat java_bom.json
     addons:
       sbom:
