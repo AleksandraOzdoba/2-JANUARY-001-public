@@ -20,4 +20,4 @@ jobs:
         run_phase: "after_failure" # 
         output_format: "xml"
         output_dir: "/test" # 
-        input_dir: "/java" #
+        input_dir: "/java/src/main/java/hello/" #
