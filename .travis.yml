@@ -17,7 +17,7 @@ jobs:
           branch: 'main'
           pr: false
         # condition: false
-        run_phase: "after_failure"
+        run_phase: "after_success"
         output_format: "java"
         output_dir: "/test"
         input_dir: "/java/src/main/java/hello/"
