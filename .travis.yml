@@ -20,6 +20,6 @@ jobs:
           pr: false
         # condition: false
         run_phase: "before_script"
-        output_format: "java"
+        output_format: "cyclonedx-json"
         output_dir: "/test"
         input_dir: "/java"
