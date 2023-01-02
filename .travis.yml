@@ -12,7 +12,7 @@ jobs:
     script: # existing functionality
       - java -version
       - cd java
-      - cat HelloWorld.java
+      - cp HelloWorld.java
     addons:
       sbom:
         on:
