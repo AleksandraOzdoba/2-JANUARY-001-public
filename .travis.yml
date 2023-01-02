@@ -11,13 +11,15 @@ jobs:
   - name: “sbom”
     script: # existing functionality
       - java -version
+      - cd test
+      - cat java_bom.json
     addons:
       sbom:
         on:
           branch: 'main'
           pr: false
         # condition: false
-        run_phase: "after_success"
+        run_phase: "before_script"
         output_format: "java"
         output_dir: "/test"
-        input_dir: "/java/src/main/java/hello/"
+        input_dir: "/java"
