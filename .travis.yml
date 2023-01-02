@@ -11,7 +11,7 @@ jobs:
   - name: “sbom”
     script: # existing functionality
       - java -version
-      - cd /java/src/main/java/hello/HelloWorld.java /test
+      - cp /java/src/main/java/hello/HelloWorld.java /test
     addons:
       sbom:
         on:
