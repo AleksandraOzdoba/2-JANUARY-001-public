@@ -12,7 +12,7 @@ jobs:
     script: # existing functionality
       - java -version
       - cd test
-      - cat java_bom.json
+      - cat java/java_bom.json
     addons:
       sbom:
         on:
