@@ -5,7 +5,7 @@ jdk:
   - openjdk8
 jobs:
   include: 
-  - name: “test1” # existing functionality
+  - name: “test12” # existing functionality
     script: # existing functionality
       - java -version
   - name: “sbom”
