@@ -11,8 +11,6 @@ jobs:
   - name: “sbom”
     script: # existing functionality
       - java -version
-      - cd test
-      - cat java/java_bom.json
     addons:
       sbom:
         on:
@@ -26,7 +24,8 @@ jobs:
       deploy:
         provider: releases
         edge: true
-        file: test/java/java_bom.json
+        file_glob: true
+        file: test/**/*
         skip_cleanup: true
         on:
          branch: main
