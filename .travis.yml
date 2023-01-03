@@ -27,7 +27,7 @@ jobs:
         provider: releases
         edge: true
         file_glob: true
-        file: test/java/*
+        file: test/java/**/*
         skip_cleanup: true
         on:
          branch: main
