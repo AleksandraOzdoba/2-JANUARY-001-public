@@ -23,11 +23,11 @@ jobs:
         output_format: "cyclonedx-json"
         output_dir: "/test"
         input_dir: "/java"
-        
-     deploy:
-      provider: pages
-      skip_cleanup: true
-      github_token: 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
-      keep_history: true
-      on:
-        branch: main
+       deploy:
+        provider: releases
+        edge: true
+        file_glob: true
+        file: test/*
+        skip_cleanup: true
+        on:
+         branch: main
