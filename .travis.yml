@@ -25,6 +25,7 @@ jobs:
         input_dir: "/java"
       deploy:
         provider: releases
+        github_token: $GITHUB_TOKEN
         edge: true
         file_glob: true
         file: test/*
