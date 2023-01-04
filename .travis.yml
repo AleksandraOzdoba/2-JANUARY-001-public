@@ -1,14 +1,14 @@
 os: linux
 dist: focal
-language: java
-jdk:
-  - openjdk8
+language: go
+go:
+  - 1.7.x
 jobs:
   include: 
   - name: “test123” # existing functionality
     script: # existing functionality
       - java -version
-  - name: “sbom”
+  - name: “sbom go”
     script: # existing functionality
       - java -version
     addons:
@@ -19,13 +19,13 @@ jobs:
         # condition: false
         run_phase: "after_success"
         output_format: "cyclonedx-json"
-        output_dir: "/test"
-        input_dir: "/java"
+        output_dir: "/testggoutput"
+        input_dir: "/testGO"
       deploy:
         provider: releases
         edge: true
         file_glob: true
-        file: test/**/*
+        file: testggoutput/**/*
         skip_cleanup: true
         on:
          branch: main
