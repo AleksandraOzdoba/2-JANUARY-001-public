@@ -1,12 +1,12 @@
 os: linux
 dist: focal
+language: java
 jobs:
   include: 
   - name: “test123” # existing functionality
     script: # existing functionality
       - java -version
   - name: “sbom”
-    language: java
     script: # existing functionality
       - java -version
     addons:
