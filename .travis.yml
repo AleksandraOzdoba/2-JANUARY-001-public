@@ -39,10 +39,10 @@ jobs:
           branch: 'main'
           pr: false
         # condition: false
-        run_phase: 'after_success'
-        output_format: 'cyclonedx-json'
-        output_dir: '/testggoutput'
-        input_dir: '/testGO'
+        run_phase: "after_success"
+        output_format: "cyclonedx-json"
+        output_dir: "/testggoutput"
+        input_dir: "/testGO"
       deploy:
         provider: releases
         edge: true
