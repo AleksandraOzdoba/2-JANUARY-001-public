@@ -27,7 +27,7 @@ jobs:
         skip_cleanup: true
         on:
          branch: main
-  - name: SBOM Go
+  - name: "SBOM Go"
     language: go
     script: # existing functionality
       - go -version
