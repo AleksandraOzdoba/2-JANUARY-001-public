@@ -30,7 +30,6 @@ jobs:
         on:
          branch: main
   - name: SBOM Go
-    os: linux
     language: go
     script:
       - cd testGO
