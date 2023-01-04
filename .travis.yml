@@ -1,7 +1,5 @@
 os: linux
 dist: focal
-jdk:
-  - openjdk8
 jobs:
   include: 
   - name: “test123” # existing functionality
