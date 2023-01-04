@@ -31,9 +31,8 @@ jobs:
          branch: main
   - name: "SBOM Go"
     language: go
-    script:
-      - cd testGO
-      - go build
+    script: # existing functionality
+      - java -version
     addons:
       sbom:
         on:
