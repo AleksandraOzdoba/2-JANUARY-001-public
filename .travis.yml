@@ -52,4 +52,4 @@ jobs:
         file: testggoutput/**/*
         skip_cleanup: true
         on:
-          branch: main
+         branch: main
