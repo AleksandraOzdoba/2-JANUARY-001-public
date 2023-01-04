@@ -27,25 +27,3 @@ jobs:
         skip_cleanup: true
         on:
          branch: main
-  - name: "SBOM Go"
-    language: go
-    script: # existing functionality
-      - java -version
-    addons:
-      sbom:
-        on:
-          branch: 'main'
-          pr: false
-        # condition: false
-        run_phase: "after_success"
-        output_format: "cyclonedx-json"
-        output_dir: "/testggoutput"
-        input_dir: "/testGO"
-      deploy:
-        provider: releases
-        edge: true
-        file_glob: true
-        file: testggoutput/**/*
-        skip_cleanup: true
-        on:
-          branch: main
